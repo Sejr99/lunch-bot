@@ -1,0 +1,44 @@
+{
+  "name": "lunch-bot",
+  "version": "1.0.0",
+  "description": "Slack bot that tells you what's for lunch",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "lint": "standard",
+    "lint:fix": "standard --fix",
+    "format": "prettier-standard 'lib/**/*.js' && prettier-standard index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lopno/lunch-bot.git"
+  },
+  "keywords": [
+    "slack",
+    "bot",
+    "lunch"
+  ],
+  "engines": {
+    "node": "6.11.4"
+  },
+  "author": "Mikael Midtgaard (lopno)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lopno/lunch-bot/issues"
+  },
+  "homepage": "https://github.com/lopno/lunch-bot#readme",
+  "devDependencies": {
+    "jest": "^21.2.1",
+    "prettier-standard": "^7.0.1",
+    "standard": "^10.0.3"
+  },
+  "dependencies": {
+    "node-fetch": "^1.7.3",
+    "parse5": "^3.0.2",
+    "xmldom": "^0.1.27",
+    "xmlserializer": "^0.6.0",
+    "xpath": "0.0.24"
+  }
+}

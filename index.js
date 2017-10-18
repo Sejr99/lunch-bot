@@ -10,7 +10,9 @@ const app = express()
 let lunchBotUserId = null // eslint-disable-line no-var
 
 // every 5 minutes (300000)
-setInterval(() => fetch('http://127.0.0.1'), 300000) // TODO
+if (process.env.URL) {
+  setInterval(() => fetch(process.env.URL), 300000)
+}
 
 app.get('/', (req, res) => res.sendStatus(200))
 

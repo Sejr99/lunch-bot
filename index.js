@@ -25,7 +25,7 @@ const lunchBot = new SlackBot({
 
 // more information about additional params https://api.slack.com/methods/chat.postMessage
 const params = {
-  icon_emoji: ':ok_hand:'
+  icon_emoji: ':pizza:'
 }
 
 lunchBot.on('start', () => {
